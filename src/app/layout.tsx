@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
-import {Providers} from "./providers";
+import { Providers } from './providers'
+import Profile from './components/Profile'
+import Tabs from './components/Tabs'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -16,11 +18,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html>
       <body className={inter.className}>
-        <Providers>
-          {children}
-        </Providers>
+        <div className="w-full max-w-[600px] p-6 m-auto">
+          <Profile />
+          <Tabs className="my-6" />
+          <Providers>
+            {children}
+          </Providers>
+        </div>
       </body>
     </html>
   )
