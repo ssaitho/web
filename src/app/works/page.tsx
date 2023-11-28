@@ -1,4 +1,12 @@
-import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image } from "@nextui-org/react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Divider,
+  Link,
+  Image,
+} from '@nextui-org/react'
 
 export default function Works() {
   return (
@@ -16,11 +24,11 @@ export default function Works() {
           <p className="text-small text-default-500">nextui.org</p>
         </div>
       </CardHeader>
-      <Divider/>
+      <Divider />
       <CardBody>
         <p>Make beautiful websites regardless of your design experience.</p>
       </CardBody>
-      <Divider/>
+      <Divider />
       <CardFooter>
         <Link
           isExternal

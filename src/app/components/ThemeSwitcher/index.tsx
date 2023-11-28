@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { Button } from '@nextui-org/react'
 
 export default function ThemeSwitcher() {
-  const [ mounted, setMounted ] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
   useEffect(() => {
@@ -16,15 +16,11 @@ export default function ThemeSwitcher() {
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }
 
-  if(!mounted) return null
+  if (!mounted) return null
 
   return (
     <Button radius="full" size="sm" onClick={handleSetTheme}>
-      {theme === "dark" ? (
-        <span>light</span>
-      ) : (
-        <span>dark</span>
-      )}
+      {theme === 'dark' ? <span>light</span> : <span>dark</span>}
     </Button>
   )
 }

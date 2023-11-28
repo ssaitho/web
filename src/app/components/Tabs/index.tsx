@@ -8,7 +8,12 @@ export default function MainTabs({ className }: { className?: string }) {
   const pathname = usePathname()
 
   return (
-    <Tabs aria-label="Options" selectedKey={pathname} fullWidth className={className}>
+    <Tabs
+      aria-label="Options"
+      selectedKey={pathname}
+      fullWidth
+      className={className}
+    >
       <Tab as={NextLink} key="/" title="Home" href="/" />
       <Tab as={NextLink} key="/works" title="Works" href="/works" />
     </Tabs>
