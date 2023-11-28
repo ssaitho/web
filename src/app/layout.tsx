@@ -18,12 +18,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html>
+    <html suppressHydrationWarning>
       <body className={inter.className}>
         <div className="w-full max-w-[600px] p-6 m-auto">
-          <Profile />
-          <Tabs className="my-6" />
           <Providers>
+            <Profile />
+            <Tabs className="my-6" />
             {children}
           </Providers>
         </div>

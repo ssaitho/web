@@ -1,4 +1,5 @@
 import { Card, CardHeader, CardBody, CardFooter, Avatar, Button } from "@nextui-org/react";
+import ThemeSwitcher from '../ThemeSwitcher'
 
 export default function Profile() {
   return (
@@ -11,13 +12,7 @@ export default function Profile() {
             <h5 className="text-small tracking-tight text-default-400">@zoeylang</h5>
           </div>
         </div>
-        <Button
-          color="primary"
-          radius="full"
-          size="sm"
-        >
-          Follow
-        </Button>
+        <ThemeSwitcher />
       </CardHeader>
       <CardBody className="px-3 py-0 text-small text-default-400">
         <p>
